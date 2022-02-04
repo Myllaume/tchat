@@ -1,0 +1,25 @@
+{
+  "name": "tchat",
+  "version": "1.0.0",
+  "description": "Tchat NodeJS + React (Webpack)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myllaume/tchat.git"
+  },
+  "author": "Guillaume Brioudes <https://myllaume.fr/>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Myllaume/tchat/issues"
+  },
+  "homepage": "https://github.com/Myllaume/tchat#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.5"
+  }
+}
