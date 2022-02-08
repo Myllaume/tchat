@@ -1,6 +1,8 @@
 const express = require('express')
     , app = express();
 
+const api = require('./api');
+
 app.listen(3000, () => {
     console.log(`Join http://localhost:3000/`);
 });
@@ -11,7 +13,7 @@ app.get('/', function(req, res) {
 
 app.get('/api', function(req, res) {
     const { item, id } = req.query;
-    const data = require('./api')(item, id)
+    const data = api(item, id)
     res.json(data);
 });
 

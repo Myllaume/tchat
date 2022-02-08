@@ -1,21 +1,23 @@
+const User = require('../models/user')
+    , Message = require('../models/message');
+
 module.exports = function (item, id) {
-    let Class;
+    let elt;
 
     switch (item) {
         case 'user':
-            Class = require('../models/user')
-        break;
+            if (id) {
+                return User.get(id);
+            }
+            return User.getAll();
 
         case 'message':
-            Class = require('../models/message')
-        break;
+            if (id) {
+                return Message.get(id);
+            }
+            return Message.getAll();
 
         default:
             return undefined;
     }
-
-    if (id) {
-        return Class.get(id);
-    }
-    return Class.getAll();
 }
