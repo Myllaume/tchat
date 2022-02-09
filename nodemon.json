@@ -1,0 +1,11 @@
+{
+    "watch": [
+        "index.js",
+        "public/",
+        "routes/",
+        "views/"
+    ],
+    "ext": "js, css, pug",
+    "verbose": true,
+    "delay": 2500
+}
